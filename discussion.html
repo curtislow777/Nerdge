@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Discussion</title>
+
+  <!--- favicon-->
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+  <!--- custom css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload banner
+  -->
+  <link rel="preload" href="images/discussion.jpg" as="image">
+
+</head>
+
+<body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" width="70" height="70" alt="logo">
+      </a>
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <a href="index.html" class="logo">
+          <img src="images/footer.png " width="150" height="150" alt="logo">
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="modules.html" class="navbar-link">Modules</a>
+          </li>
+          <li class="navbar-item">
+            <a href="discussion.html" class="navbar-link">Discussion</a>
+          </li>
+          <li class="navbar-item">
+            <a href="leaderboard.html" class="navbar-link">Leaderboard</a>
+          </li>
+          <li class="navbar-item">
+            <a href="reward.html" class="navbar-link">Rewards</a>
+          </li>
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav-action-list">
+          <li>
+            <a href="profile.html" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" class="nav-action-btn">
+              <ion-icon name="log-in-outline"></ion-icon>
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+     <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('images/discussion.jpg');">
+        <div class="container">
+          <h1 class="h1 hero-title" style="text-align: center;color: white;">
+            Discussion
+          </h1>
+        </div>
+      </section>
+
+      <div class="buttone">
+        <li style="padding-left: 100px; padding-top: 30px;" >
+          <button class="filter-btn  active">Filter ⌄</button>
+        </li>
+
+        <li style="padding-left: 20px; padding-top: 30px;" >
+          <button class="filter-btn  active1">Modules ⌄</button>
+        </li>
+
+        <li style="padding-left: 20px; padding-top: 30px;" >
+          <button class="filter-btn  active2">+ New Post</button>
+        </li>
+      </div>
+   
+     <!-- 
+        - #DISCUSSION
+      -->
+  <div class="container-discussion" style="padding-left: 20px; padding-right: 20px; padding-bottom: 20px; ">
+    <div class="row">
+      <div class="col-md" style="padding-top: 20px;">
+        <div class="card-dis" id="discussion">
+          <div class="card-header">
+            <div class="row">
+              <div class="col-md-2 user-info">
+                <img src="images/avatar-1.png" alt="User Image">
+                <h4 style="color: #00AFB9;">DOLAN</h4>
+              </div>
+              <div class="col-md-2 time-posted">
+                <p>7 hours ago</p>
+              </div>
+              <div class="col-md-8 pinned">
+                <p>pinned</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h2>GC WEEK 7 DISCUSSION</h2>
+              </div>
+            </div>
+            <div class="row">
+              Magic Items
+            </div>
+            <div class="row-icons">
+                <ion-icon name="thumbs-up-outline"></ion-icon>
+                <p>7</p>
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <p>7</p>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container-discussion" style="padding-left: 20px; padding-right: 20px; padding-bottom: 20px;">
+      <div class="row">
+        <div class="col-md" style="padding-top: 20px;">
+          <div class="card-dis" id="discussion">
+            <div class="card-header">
+              <div class="row">
+                <div class="col-md-2 user-info">
+                  <img src="images/avatar-2.png" alt="User Image">
+                  <h4 style="color:#9F80AF;">DOSAI</h4>
+                </div>
+                <div class="col-md-2 time-posted">
+                  <p>9 hours ago</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>Comms Speech Tips</h2>
+                </div>
+              </div>
+              <div class="row">
+                Eye Contact, Loudness ...
+              </div>
+              <div class="row-icons">
+                <ion-icon name="thumbs-up-outline"></ion-icon>
+                <p>2</p>
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <p>5</p>
+              </div>
+              </div>
+  
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="container-discussion" style="padding-left: 20px; padding-right: 20px; padding-bottom: 20px;">
+        <div class="row">
+          <div class="col-md" style="padding-top: 20px;">
+            <div class="card-dis" id="discussion">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-md-2 user-info">
+                    <img src="images/avatar-3.png" alt="User Image">
+                    <h4 style="color: #0081A7;">okipullup</h4>
+                  </div>
+                  <div class="col-md-2 time-posted">
+                    <p>23 hours ago</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2>PMT Quiz Revision </h2>
+                  </div>
+                </div>
+                <div class="row">
+                  SCRUM TEAM
+                </div>
+                <div class="row-icons">
+                  <ion-icon name="thumbs-up-outline"></ion-icon>
+                  <p>3</p>
+                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                  <p>4</p>
+                </div>
+                </div>
+    
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        
+      <div class="container-discussion" style="padding-left: 20px; padding-right: 20px; padding-bottom: 50px;">
+        <div class="row">
+          <div class="col-md" style="padding-top: 20px;">
+            <div class="card-dis" id="discussion">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-md-2 user-info">
+                    <img src="images/avatar.png" alt="User Image">
+                    <h4 style="color: #FED9B7;">Eggo</h4>
+                  </div>
+                  <div class="col-md-2 time-posted">
+                    <p>1 hours ago</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2>AD Adobe XD</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  MICRO-ANNIMATION IS USED ...
+                </div>
+                <div class="row-icons">
+                  <ion-icon name="thumbs-up-outline"></ion-icon>
+                  <p>5</p>
+                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                  <p>3</p>
+                </div>
+                </div>
+    
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="lottie">
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jk8ihard.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px; margin-left: 500px ;"  loop  autoplay></lottie-player>
+        </div>
+       
+       
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+                <span class="footer-link-text">
+                  535 Clementi Rd, Singapore 599489
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+                <span class="footer-link-text">+65 8798 5435</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+                <span class="footer-link-text">S1034547F@connect.np.edu.sg</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Useful Links</p>
+            </li>
+            <li>
+              <a href="index.html" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <span class="footer-link-text">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="modules.html" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <span class="footer-link-text">Modules</span>
+              </a>
+            </li>
+            <li>
+              <a href="discussion.html" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <span class="footer-link-text">Discussion</span>
+              </a>
+            </li>
+            <li>
+              <a href="leaderboard.html" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <span class="footer-link-text">Leaderboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="reward.html" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <span class="footer-link-text">Rewards</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <span class="footer-link-text">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">CEO's Contact</p>
+            <table class="footer-table">
+              <tbody>
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Curtis:</th>
+                  <td class="table-data">+65 7777 7777</td>
+                </tr>
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Dhilsha:</th>
+                  <td class="table-data">+65 8888 7777</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Newsletter</p>
+            <p class="newsletter-text">
+              We Are Not Scam, Email Us To Get Delicious Offers!
+            </p>
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- 
+  #GO TO TOP
+  -->
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+    
+      
+
+      
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
